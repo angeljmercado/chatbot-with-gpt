@@ -3,7 +3,9 @@ import sys
 from decouple import config
 
 api_key = config("key")
-class ChatBot:
+
+class Chatbot:
+    """ Chatbot class to send request to the openai API """
     def __init__(self):
         openai.api_key = api_key
     
